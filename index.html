@@ -4,169 +4,333 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> mon porfollio</title>
+  <title>Soifida Soidri — Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- Navigation -->
   <header>
     <div class="container">
       <nav class="nav">
-        <div><strong>soifida soidri</strong></div>
-        <div>
-
+        <div class="nav-logo">Soifida<span>.</span></div>
+        <div class="nav-links">
           <a href="#apropos">À propos</a>
-          <a href="#projets">Projets</a>
           <a href="#competences">Compétences</a>
+          <a href="#projets">Projets</a>
+          <a href="#formation">Formation</a>
           <a href="#contact">Contact</a>
         </div>
+        <button class="nav-toggle" aria-label="Menu">&#9776;</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <Div class="container">
-      <section class="hero">
-        <h1>Bienvenue dans mon portfolio </h1>
-        <p> Je m'appelle <strong class="nom">Soifida Soidri</strong> <br>
-          Venue aux iles comorienne pour poursuivre mes etudes superieures<br>
-          Etudiante en licence 1 informatique a l'ESTM <br>
-          Passionné par le développement web, je crée mon propre site.</p>
-        <a href="#projets" class="btn">Voir mes projets</a>
-      </section>
-    </Div>
 
-    <section class="apropos">
-      <h2>À propos de moi</h2>
-      <img src="photo/photo.jpeg" alt="Photo de profil" class="photo-profil">
-      <p>Je suis étudiante en licence 1 informatique en cours a l'ecole de l'ESTM. Je développe mes compétences en HTML
-        et CSS et je souhaite devenir développeur web.</p>
-    </section>
-
-    <section class="competance">
-      <h2>Compétences</h2>
-      <label for="file">HTML </label>
-      <progress id="file" value="80" max="100"> 80% </progress><br>
-
-      <label for="file">CSS</label>
-      <progress id="file" value="70" max="100"> 70% </progress><br>
-
-      <label for="file">JavaScript</label>
-      <progress id="file" value="50" max="100"> 1% </progress><br>
-
-      <label for="file">responsive design</label>
-      <progress id="file" value="60" max="100"> 3% </progress><br>
-
-      <label for="file">gestion de version</label>
-      <progress id="file" value="40" max="100"> 2% </progress><br>
-      <label for="file">debloquage et optimisation</label>
-      <progress id="file" value="30" max="100"> 1% </progress><br>
-    </section>
-    <section class="academique">
-      <h2>Parcours académique</h2>
-      <ul>
-        <li>Licence 1 GLAR Informatique </li>
-        <li>ESTM</li>
-        <li>Année : 2025 - 2026</li>
-      </ul>
-    </section>
-
-
-    <section id="projets">
-      <div class="projets">
-        <h2>mes projets</h2>
-        <div class="portfolio-gird">
-          <!--projet 1-->
-          <div class="portfolio-card">
-            <h3>projet de stade</h3>
-            <img src="photo/Capture.PNG" alt="photo de projet" class="photo-projet">
-            <p>represente le stade de abdoulaye wade</p>
-            <a href="../10-application/index.html" class="btn" target="_blank"> en savoir plus</a>
-            <!--projet 2-->
-            <h3>projet de lecture en ligne</h3>
-            <img src="photo/image.PNG" alt="Photo de projet" class="photo-projet">
-            <p>represente un projet une lecture en ligne</p>
-            <a href="../17-application/index.html" class="btn" target="_blank">en savoir plus</a>
-            <!--projet 3-->
-            <h4>projet de mon image</h4>
-            <img src="photo/picture.PNG" alt="Photo de projet" class="photo-projet">
-            <p>represente un projet d'image de mon nom</p>
-            <a href="../15-application1/index.html" class="btn" target="_blank">en savoir plus</a>
-            <!--projet 4-->
-            <h4>projet de mos produits</h4>
-            <img src="photo/capt.PNG" alt="Photo de projet" class="photo-projet">
-            <p>represente un projet de mes produits</p>
-            <a href="../16-application2/produit.html" class="btn" target="_blank">en savoir plus</a>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-tag">Benvenue dans mon porfolio Étudiante en développement web</p>
+          <h1>Bonjour, je suis<br><span class="accent">Soifida Soidri</span></h1>
+          <p class="hero-desc">
+            Venue des îles Comoriennes pour poursuivre mes études supérieures.
+            Étudiante en Licence 1 Informatique à l'ESTM, passionnée par la création web,j'ai cree mon propre site.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline">Me contacter</a>
           </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-ring">
+            <img src="photo/photo.jpeg" alt="Photo de Soifida Soidri">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="formation">
-      <h2>Parcours &formation</h2>
-      <div class="underline"></div>
-      <div class="timeline">
-        <div class="item">
-          <div class="circle">
-            <div class="content">
-              <span class="annees">2025 - 2026</span>
-              <h3>Licence 1 Informatique à l'ESTM </h3>
-              <p>en cours de ma licence 1 en genir logiciel et administration reseaux </p>
+    <!-- À propos -->
+    <section id="apropos" class="section apropos">
+      <div class="container">
+        <div class="section-header">
+          <h2>À propos de moi</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="apropos-grid">
+          <div class="apropos-card">
+            <div class="card-icon">&#127891;</div>
+            <h3>Étudiante</h3>
+            <p>Licence 1 Génie Logiciel &amp; Administration Réseaux à l'ESTM (2025–2026)</p>
+          </div>
+          <div class="apropos-card">
+            <div class="card-icon">&#127758;</div>
+            <h3>Origine</h3>
+            <p>Venue des îles Comoriennes pour poursuivre mes études supérieures au senegal</p>
+          </div>
+          <div class="apropos-card">
+            <div class="card-icon">&#128187;</div>
+            <h3>Passion</h3>
+            <p>Développement web — créer des interfaces belles et fonctionnelles est ma motivation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section competences">
+      <div class="container">
+        <div class="section-header">
+          <h2>Compétences</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct: 80%"></div>
             </div>
           </div>
-          <div class="item">
-            <div class="circle">
-              <div class="content">
-                <span class="annees">2025 - 2026</span>
-                <h3>inscription a l'ESTM</h3>
-                <p>inscription a l'ecole de l'ESTM pour la licence 1 en genie logiciel et administration reseaux </p>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">1%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct: 1%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-pct">1%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct: 1%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Gestion de version (Git)</span>
+              <span class="skill-pct">1%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct: 1%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Débogage &amp; Optimisation</span>
+              <span class="skill-pct">1%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct: 1%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section projets">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mes Projets</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projets-grid">
+
+          <div class="projet-card">
+            <div class="projet-img">
+              <img src="photo/Capture.PNG" alt="Projet stade Abdoulaye Wade">
+              <div class="projet-overlay">
+                <a href="../10-application/index.html" class="btn btn-sm" target="_blank">Voir le projet</a>
               </div>
             </div>
-            <dial class="item">
-              <div class="circle">
-                <div class="content">
-                  <span class="annees">2024 - 2025</span>
-                  <h3>Baccalauréat D Scientifique au comores </h3>
-                  <p>obtenue mon baccalauréat D scientifique au comores </p>
-                </div>
+            <div class="projet-body">
+              <h3>Stade Abdoulaye Wade</h3>
+              <p>Représentation du stade Abdoulaye Wade en HTML/CSS.</p>
+              <div class="projet-tags">
+                <span>HTML</span><span>CSS</span>
               </div>
+            </div>
+          </div>
+
+          <div class="projet-card">
+            <div class="projet-img">
+              <img src="photo/image.PNG" alt="Projet lecture en ligne">
+              <div class="projet-overlay">
+                <a href="../17-application/index.html" class="btn btn-sm" target="_blank">Voir le projet</a>
+              </div>
+            </div>
+            <div class="projet-body">
+              <h3>Lecture en ligne</h3>
+              <p>Plateforme de lecture en ligne — interface web complète.</p>
+              <div class="projet-tags">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="projet-card">
+            <div class="projet-img">
+              <img src="photo/picture.PNG" alt="Projet image personnelle">
+              <div class="projet-overlay">
+                <a href="../15-application1/index.html" class="btn btn-sm" target="_blank">Voir le projet</a>
+              </div>
+            </div>
+            <div class="projet-body">
+              <h3>Page personnelle</h3>
+              <p>Projet de mise en valeur d'image et de typographie personnelle.</p>
+              <div class="projet-tags">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="projet-card">
+            <div class="projet-img">
+              <img src="photo/capt.PNG" alt="Projet produits">
+              <div class="projet-overlay">
+                <a href="../16-application2/produit.html" class="btn btn-sm" target="_blank">Voir le projet</a>
+              </div>
+            </div>
+            <div class="projet-body">
+              <h3>Mes Produits</h3>
+              <p>Page de présentation de produits avec galerie visuelle.</p>
+              <div class="projet-tags">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
+    <!-- Formation -->
+    <section id="formation" class="section formation">
+      <div class="container">
+        <div class="section-header">
+          <h2>Parcours &amp; Formation</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
 
-    <section class="contact">
-      <h2>Contact </h2>
-      <form class="contact">
-        <label>Nom :</label><br>
-        <input type="text" placeholder="vote nom"><br>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2025 – 2026</span>
+              <h3>Licence 1 Informatique — ESTM</h3>
+              <p>En cours de ma Licence 1 en Génie Logiciel et Administration Réseaux à l'École Supérieure de Technologie et de Management.</p>
+            </div>
+          </div>
 
-        <label>Email :</label><br>
-        <input type="email" placeholder="votre email"><br>
-        <label>sujet</label>
-        <select>
-          <option>sujet </option>
-          <option>style </option>
-          <option>developpement</option>
-        </select> <br>
-        <label for="message">Message :</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-        <button type="submit">Envoyer</button><br>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2025-2026</span>
+              <h3>Inscription à l'ESTM</h3>
+              <p>Inscription à l'école ESTM pour la Licence 1 en Génie Logiciel et Administration Réseaux.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2024 – 2025</span>
+              <h3>Baccalauréat D Scientifique — Comores</h3>
+              <p>Obtention du Baccalauréat D Scientifique aux îles Comoriennes.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Travaillons ensemble</h3>
+            <p>N'hésitez pas à me contacter pour toute collaboration, question ou opportunité de stage.</p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon">&#9993;</span>
+                <a href="mailto:soifida.soidri@gmail.com">soifida.soidri@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-icon">&#128279;</span>
+                <a href="https://www.linkedin.com/in/soifida-soidri-b1a9b7245/" target="_blank">LinkedIn</a>
+              </li>
+              <li>
+                <span class="contact-icon">&#128196;</span>
+                <a href="https://www.facebook.com/soifida.soidri" target="_blank">Facebook</a>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet</label>
+              <select id="sujet" name="sujet">
+                <option value="sujet">Choisir un sujet</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="stage">Opportunité de stage</option>
+                <option value="developpement">Développement web</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <section class="social medias">
-    <img src="https://i.pinimg.com/736x/60/56/49/605649a1ccca9da92bdfb1c073c94eb6.jpg" alt="social media icons"
-      class="social-icons">
-    <a href="https://www.facebook.com/soifida.soidri" target="_blank">gmail
-
-    </a>
-    <a href="https://www.gmail.com/soifida.soidri" target="_blank">gmail</a>
-    <a href="https://www.linkedin.com/in/soifida-soidri-b1a9b7245/" target="_blank">LinkedIn</a>
-    <a href="https://www.github.com/soifida.soidri/" target="_blank">Instagram</a>
-
-  </section>
-
-
+  <!-- Footer -->
   <footer>
-    <div class="container">© 2026 soifida soidri - Portfolio</div>
+    <div class="container footer-inner">
+      <div class="footer-logo">Soifida<span>.</span></div>
+      <p class="footer-copy">&copy; 2026 Soifida Soidri — Tous droits réservés</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/soifida.soidri" target="_blank" aria-label="Facebook">&#128196;</a>
+        <a href="https://www.linkedin.com/in/soifida-soidri-b1a9b7245/" target="_blank" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">&#128279;</a>
+      </div>
+    </div>
   </footer>
-</body>
 
+</body>
 </html>
